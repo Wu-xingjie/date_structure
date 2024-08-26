@@ -1,12 +1,13 @@
 #pragma once
 
 #include "virtual_linear_list/h"
+#include <algorithm>
 
 template<typename T>
 class ArrayList : public LinearList<T>
 {
     public:
-        ArrayList();
+        ArrayList(const int& initialCapacity = 10);
         ArrayList(const ArrayList<T>& CopySource);
         ~ArrayList();
 
@@ -25,5 +26,5 @@ class ArrayList : public LinearList<T>
 
         T* _Element;
         int _ArrayLength;
-        int _ListLength;
+        int _ListSize;
 };
