@@ -1,3 +1,0 @@
-/home/wxj/date_structure/Recursive/build/CMakeFiles/main.dir
-/home/wxj/date_structure/Recursive/build/CMakeFiles/edit_cache.dir
-/home/wxj/date_structure/Recursive/build/CMakeFiles/rebuild_cache.dir
