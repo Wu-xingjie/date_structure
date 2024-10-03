@@ -2,14 +2,17 @@
 
 namespace SEQ_MAP {
 template <typename KEYT, typename VALUET>
-void SEMAP<KEYT, VALUET>::insert(const KEYT& key, const VALUET& value) {
+void SEMAP<KEYT, VALUET>::insert(const NODE<KEYT, VALUET>& p) {
   if (_root == nullptr) {
-    _root = new NODE();
+    _root = new NODE<KEYT, VALUET>();
     return;
   }
 
-  auto cur = _root;
+  NODE<KEYT, VALUET>* cur = _root;
   while (cur != nullptr) {
-    if () }
+    if (cur->_count > p->_count) {
+      
+    }
+  }
 }
 }  // namespace SEQ_MAP
