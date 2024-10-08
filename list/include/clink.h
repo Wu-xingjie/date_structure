@@ -8,12 +8,14 @@ struct NODE {
 
 class Clink {
  public:
-  Clink();
-  ~Clink(){delete _head;}
+  Clink() { _head = new NODE(); }
+  ~Clink();
 
  public:
   void InsertTail(int val);
   void InsetHead(int val);
+  void RemoveElem(int val);
+  void RemoveALL(int val);
   void show();
 
  private:

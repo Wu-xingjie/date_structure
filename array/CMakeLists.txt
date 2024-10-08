@@ -6,6 +6,7 @@ set(LIBPATH ${CMAKE_CURRENT_SOURCE_DIR}/build/lib)
 set(EXEPATH ${CMAKE_CURRENT_SOURCE_DIR}/build/exe)
 set(HEADPATH ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+set(CMAKE_BUILD_TYPE debug)
 
 add_subdirectory(src)
 add_subdirectory(test)

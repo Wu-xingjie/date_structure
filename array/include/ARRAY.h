@@ -17,6 +17,7 @@ class Array {
   int find(int elem);
   void fix(int pos, int elem);
   void show();
+  void reverse();
 
  private:
   void expand(int size);

@@ -36,5 +36,10 @@ int main() {
   test.fix(2, 234);
   test.show();
 
+  std::cout << "reverse: \n";
+  test.show();
+  test.reverse();
+  test.show();
+
   return 0;
 }

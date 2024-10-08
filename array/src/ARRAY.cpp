@@ -71,4 +71,16 @@ void Array::show() {
   std::cout << std::endl;
 }
 
+void Array::reverse() {
+  int* first_elem = _mpArr;
+  int* last_elem = _mpArr + _mCur -1;
+   while (first_elem < last_elem) {
+    int temp_elem = *first_elem;
+    *first_elem = *last_elem;
+    *last_elem = temp_elem;
+    first_elem++;
+    last_elem--;
+  }
+}
+
 }  // namespace ARRAY
