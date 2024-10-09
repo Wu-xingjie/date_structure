@@ -3,6 +3,7 @@
 
 int main() {
   //===============clink===================
+  std::cout << "===============clink===================" << std::endl;
   LIST::Clink test;
   test.InsertTail(12);
   test.InsertTail(43);
@@ -22,7 +23,8 @@ int main() {
   test.RemoveALL(234);
   test.show();
 
-  //===============clink===================
+  //===============bilink===================
+    std::cout << "===============bilink===================" << std::endl;
   BILINK::bilink<int> bitest;
   bitest.insertTail(1);
   bitest.insertTail(2);
