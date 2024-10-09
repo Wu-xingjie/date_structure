@@ -1,6 +1,8 @@
+#include "bilink.h"
 #include "clink.h"
 
 int main() {
+  //===============clink===================
   LIST::Clink test;
   test.InsertTail(12);
   test.InsertTail(43);
@@ -19,6 +21,26 @@ int main() {
   test.RemoveALL(3);
   test.RemoveALL(234);
   test.show();
+
+  //===============clink===================
+  BILINK::bilink<int> bitest;
+  bitest.insertTail(1);
+  bitest.insertTail(2);
+  bitest.insertTail(3);
+  bitest.show();
+
+  bitest.insertHead(54);
+  bitest.insertHead(32);
+  bitest.insertHead(564);
+  bitest.show();
+
+  std::cout << "bitest contain 32?  " << bitest.find(32) << std::endl;
+  std::cout << "bitest contain 20?  " << bitest.find(20) << std::endl;
+
+  bitest.insertTail(54);
+  bitest.show();
+  bitest.remove(54);
+  bitest.show();
 
   return 0;
 }
