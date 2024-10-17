@@ -3,4 +3,6 @@ project(queue CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(main main.cpp QUEUE.h)
+set(CMAKE_BUILD_TYPE debug)
+
+add_executable(main main.cpp QUEUE.h link_queue.cpp)
