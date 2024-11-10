@@ -1,6 +1,4 @@
-#pragma once
-
-namespace SEQ_MAP {
+namespace NODE {
 static int node_count = 0;
 
 // pair
@@ -17,38 +15,28 @@ struct NODE {
   NODE()
       : _count(node_count) _parent(nullptr),
         _left_child(nullptr),
-        _right_child(nullptr) {}
+        _right_child(nullptr),
+        _height(1) {}
   NODE(const KEYT& k, const VALUET& val)
       : _count(node_count),
         _date(k, val),
         _parent(nullptr),
         _left_child(nullptr),
-        _right_child(nullptr) {}
+        _right_child(nullptr),
+        _height(1) {}
   NODE(const MYPAIR<KEYT, VALUET>& p)
       : _count(node_count),
         _date(p->_key, p->_value),
         _parent(nullptr),
         _left_child(nullptr),
-        _right_child(nullptr) {}
+        _right_child(nullptr),
+        _height(1) {}
 
   MYPAIR<KEYT, VALUET> _date;
+  int _height;
   int _count;
   MYPAIR<KEYT, VALUET>* _parent;
   MYPAIR<KEYT, VALUET>* _left_child;
   MYPAIR<KEYT, VALUET>* _right_child;
 };
-
-// sequence map
-template <typename KEYT, typename VALUET>
-class SEMAP {
- public:
-  SEMAP() { _root = nullptr; }
-  ~SEMAP(){delete _root};
-  // insert
-  void insert(const NODE<KEYT, VALUET>& p);
-
- private:
-  NODE<KEYT, VALUET>* _root;
-};
-
-}  // namespace SEQ_MAP
+}  // namespace NODE

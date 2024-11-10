@@ -1,6 +1,6 @@
-#include "sequence_map.h"
+#include "seq_map_bst.h"
 
-namespace SEQ_MAP {
+namespace BST {
 template <typename KEYT, typename VALUET>
 void SEMAP<KEYT, VALUET>::insert(const NODE<KEYT, VALUET>& p) {
   if (_root == nullptr) {
